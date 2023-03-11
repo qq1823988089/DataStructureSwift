@@ -7,6 +7,8 @@
 
 import Foundation
 
+//时间：O(N^2)
+//在数较少时可以用
 public func insertionSort<T>(_ array: [T], _ isOrderedBefore: (T, T) -> Bool) -> [T] {
     guard array.count > 1 else { return array }
     //函数参数为常量，函数体只能访问不能修改，这里复制一份
