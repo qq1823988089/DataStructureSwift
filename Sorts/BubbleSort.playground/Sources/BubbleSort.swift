@@ -2,6 +2,7 @@ import Foundation
 
 //时间Average: O(N^2) Worst: O(N^2)
 //空间-交换:O(1)
+//稳定的，不会交换相同数
 
 public func bubbleSort<T> (_ elements: [T]) -> [T] where T: Comparable {
     return bubbleSort(elements, <)
